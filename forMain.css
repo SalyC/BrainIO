@@ -116,7 +116,7 @@ img{
     gap: 20px;
     justify-content: space-around;
     margin: auto;
-    width: 50%;
+    width: 60%;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
@@ -400,17 +400,6 @@ img{
     background-color: #ccc;
 }
 
-.FAQ__collapsible::after {
-    content: "▼";
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 12px;
-    color: #fff;
-    transition: transform 0.3s ease;
-}
-
 .FAQ__collapsible.active {
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 8L8 2L14 8' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
@@ -517,4 +506,75 @@ img{
 
     mix-blend-mode: normal;
     opacity: 0.7;
+}
+
+/* !я каждый раз в ахуе с футера */
+
+.footer {
+    padding: 60px 0 20px;
+    color: #fff;
+    background-color: #161C2D;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer__main-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+    flex: 1;
+}
+
+.footer__header {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+.footer__link {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    line-height: 1.4;
+}
+
+.footer__link:hover {
+    color: #fff;
+}
+
+.footer__contact a{
+    font-size: 14px;
+    color: #473BF0;
+    white-space: nowrap;
+    line-height: 1.4;
+}
+
+.footer__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer__realfooter {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    letter-spacing: 0.5px;
 }
