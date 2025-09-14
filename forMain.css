@@ -3,7 +3,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: #000;
+    /* background-color: #000; */
     color: #fff;
 }
 
@@ -84,6 +84,7 @@ img{
 /* !welcome */
 
 .welcome {
+    background-color: #000;
     box-sizing: border-box;
     min-height: 100vh;
 
@@ -143,3 +144,43 @@ img{
     opacity: 0.7;
     font-weight: 200;
 }
+
+/* !статистика(хз, как назвать) */
+
+.statistic {
+    padding: 50px 0;
+    color: #161C2D;
+    border-bottom: 1px solid #000;
+}
+
+.statistic .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.statistic__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.statistic__info {
+    font-size: 38px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.statistic__info--text {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.0290937px;
+
+    max-width: 220px;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
